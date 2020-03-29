@@ -3,7 +3,6 @@ const api = require('../services/api');
 module.exports = {
   async index(req, res) {
     const { title, startIndex } = req.body;
-    console.log(title, startIndex);
     if (!title)
       return res
         .status(400)

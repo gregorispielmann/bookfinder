@@ -82,7 +82,10 @@ export default function Favorites() {
           Anterior
         </Indicator>
         {page + 1} de {totalPages}
-        <Indicator disabled={page === totalPages - 1} onClick={upPage}>
+        <Indicator
+          disabled={page === totalPages - 1 || totalPages === 0}
+          onClick={upPage}
+        >
           Próxima
           <FaArrowRight size={10} />
         </Indicator>
