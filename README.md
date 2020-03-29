@@ -24,13 +24,11 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [Information](#information)
 
 ## 🧐 About <a name = "about"></a>
 
@@ -81,6 +79,14 @@ $ cd server && npm install && npx knex migrate:latest && npx knex seed:run && np
 
 ```
 
+### Screenshots
+
+<div style="display: flex; width: 100%;">
+  <img src="./screenshots/screenshot0.png" width="30%"/>
+  <img src="./screenshots/screenshot1.png" width="30%"/>
+  <img src="./screenshots/screenshot2.png" width="30%"/>
+</div>
+
 ### Frontend (Web)
 
 ### Install dependencies and start the web using Yarn or Npm
@@ -127,7 +133,7 @@ You just need this infos to login in the web application.
 
 - [@gregorispielmann](https://github.com/gregorispilelmann)
 
-## 🎉 TODOS, Facilidades, dificuldades e horas <a name = "acknowledgement"></a>
+## 🎉 TODOS, Facilidades, dificuldades e horas <a name = "information"></a>
 
 TODOS
 - Acrescentar Redux e inserir informações que necessitem ser compartilhadas entre componentes tais como quantidade de favoritos para o header
