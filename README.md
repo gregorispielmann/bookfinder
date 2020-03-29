@@ -121,7 +121,7 @@ You just need this infos to login in the web application.
 - [SQLite3](https://www.sqlite.org/) - Local Database
 - [axios](https://github.com/axios/axios) - HTTP Client
 - [Styled Components](https://nodejs.org/en/) - CSS in JS
-and others
+- and others
 
 ## ✍️ Authors <a name = "authors"></a>
 
