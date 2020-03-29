@@ -125,10 +125,18 @@ and others
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@gregorispielmann](https://github.com/gregorispilelmann)k
+- [@gregorispielmann](https://github.com/gregorispilelmann)
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+## 🎉 TODOS, Facilidades, dificuldades e horas <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+TODOS
+- Acrescentar Redux e inserir informações que necessitem ser compartilhadas entre componentes tais como quantidade de favoritos para o header
+
+Facilidades
+- Criação do frontend React.js em geral
+- Criação do backend utilizando Node.js e Express.js
+
+Dificuldades
+- Uso da API do Google (retornos confusos)
+
+Horas trabalhas (estimadas) - 16h
