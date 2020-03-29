@@ -60,7 +60,7 @@ You will find inside server folder a file with .env.example name, you need to re
 
 ```
 
-APP_SECRET=yourscretkey
+APP_SECRET=yoursecretkey
 
 ```
 
