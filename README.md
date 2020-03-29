@@ -48,8 +48,6 @@ You need yarn or npm to run this application
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
 Clone this repo using the address https://github.com/gregorispielmann/bookfinder.git
 
 ### Running em Dev Mode
