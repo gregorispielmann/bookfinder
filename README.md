@@ -82,9 +82,9 @@ $ cd server && npm install && npx knex migrate:latest && npx knex seed:run && np
 ### Screenshots
 
 <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
-  <img src="./screenshots/screenshot0.png" width="45%"/>
-  <img src="./screenshots/screenshot1.png" width="45%"/>
-  <img src="./screenshots/screenshot2.png" width="45%"/>
+  <img src="./screenshots/screenshot0.png" width="100%"/>
+  <img src="./screenshots/screenshot1.png" width="100%"/>
+  <img src="./screenshots/screenshot2.png" width="100%"/>
 </div>
 
 ### Frontend (Web)
