@@ -33,11 +33,13 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "no-nested-ternary": "off",
-    "radix": "off"
+    "radix": "off",
+    "import/no-unresolved": "off"
   },
   settings: {
     "import/resolver": {
       "babel-plugin-root-import": {
+        rootPathPrefix: "~",
         rootPathSuffix: "src"
       },
     },

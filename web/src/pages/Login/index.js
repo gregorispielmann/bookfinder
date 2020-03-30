@@ -37,7 +37,7 @@ export default function Login() {
       const { user_id } = res.data;
       localStorage.setItem('userId', user_id);
       history.push('/favorites');
-    } catch (e) {
+    } catch (err) {
       toast.error('E-mail ou senha inválido(s)');
     }
   }

@@ -50,6 +50,7 @@ export default function Favorites() {
     });
 
     setFavorites(res.data.favoriteBooks);
+    setPage(0);
     setIsLoading(false);
     toast.success('Livro removido dos favoritos com sucesso');
   };
@@ -81,7 +82,7 @@ export default function Favorites() {
           <FaArrowLeft size={10} />
           Anterior
         </Indicator>
-        {page + 1} de {totalPages + 1}
+        {page + 1} de {totalPages === 0 ? totalPages + 1 : totalPages}
         <Indicator
           disabled={page === totalPages - 1 || totalPages === 0}
           onClick={upPage}

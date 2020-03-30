@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Redirect, Route } from 'react-router-dom';
 
 /** LAYOUTS */
@@ -27,3 +28,13 @@ export default function Routes({
     />
   );
 }
+
+Routes.propTypes = {
+  isPrivate: PropTypes.bool,
+  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
+    .isRequired,
+};
+
+Routes.defaultProps = {
+  isPrivate: false,
+};

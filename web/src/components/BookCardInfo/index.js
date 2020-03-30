@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { FaHeart, FaHeartBroken } from 'react-icons/all';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { FaHeart } from 'react-icons/all';
 
 import {
   Container,
@@ -11,7 +12,7 @@ import {
   Description,
 } from './styles';
 
-export default function BookCard({ id, book, handleAdd }) {
+export default function BookCardInfo({ id, book, handleAdd }) {
   return (
     <Container>
       <Title>{book.title}</Title>
@@ -33,3 +34,9 @@ export default function BookCard({ id, book, handleAdd }) {
     </Container>
   );
 }
+
+BookCardInfo.propTypes = {
+  id: PropTypes.string.isRequired,
+  book: PropTypes.objectOf(Object).isRequired,
+  handleAdd: PropTypes.func.isRequired,
+};

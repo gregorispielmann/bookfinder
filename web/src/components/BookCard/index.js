@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+
 import { FaHeart, FaHeartBroken } from 'react-icons/all';
 
 import {
@@ -48,3 +50,8 @@ export default function BookCard({ book, handleRemove }) {
     </Container>
   );
 }
+BookCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  book: PropTypes.objectOf(Object).isRequired,
+  handleRemove: PropTypes.func.isRequired,
+};

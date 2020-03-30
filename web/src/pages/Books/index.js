@@ -21,7 +21,6 @@ export default function Books() {
   const [books, setBooks] = useState([]);
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(0);
-  const [total, setTotal] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
 
   const id = localStorage.getItem('userId');
@@ -63,7 +62,7 @@ export default function Books() {
     if (books.totalItems && books.totalItems > 10)
       setTotalPages(intPart + (decPart > 0 && 1));
     else setTotalPages(0);
-  }, [books, total]);
+  }, [books]);
 
   const handleAdd = async bookId => {
     try {
