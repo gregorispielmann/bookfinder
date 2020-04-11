@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   padding: 20px;
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
 
   margin-bottom: 10px;
 `;
@@ -66,4 +66,10 @@ export const Divider = styled.div`
 export const Description = styled.div`
   color: #666;
   font-size: 14px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-box-orient: vertical;
 `;

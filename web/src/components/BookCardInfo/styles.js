@@ -5,20 +5,18 @@ export const Container = styled.div`
   background: #fff;
   border-radius: 5px;
   border: 1px solid #ccc;
+  display: inline-block;
 
   padding: 20px;
-  width: 100%;
-  max-width: 500px;
+  width: calc(100% / 4 - 40px);
   flex-grow: 1;
-  margin-bottom: 10px;
+  margin: 5px;
 `;
 
 export const CoverFavorite = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
-
-  height: 300px;
 `;
 
 export const FavButton = styled.button`
@@ -42,8 +40,12 @@ export const FavButton = styled.button`
 `;
 
 export const Cover = styled.div`
-  height: 300px;
-  width: 200px;
+  display: relative;
+  height: 250px;
+  min-width: 150px;
+
+  margin-bottom: 20px;
+  margin-right: 10px;
 
   background-image: url(${props => props.src});
   background-repeat: no-repeat;
@@ -66,4 +68,10 @@ export const Divider = styled.div`
 export const Description = styled.div`
   color: #666;
   font-size: 14px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* number of lines to show */
+  -webkit-box-orient: vertical;
 `;

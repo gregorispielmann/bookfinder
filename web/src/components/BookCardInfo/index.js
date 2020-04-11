@@ -19,18 +19,19 @@ export default function BookCardInfo({ id, book, handleAdd }) {
       <Divider />
       <CoverFavorite>
         <Cover src={book.imageLinks && book.imageLinks.thumbnail} />
-        <FavButton onClick={() => handleAdd(id)}>
-          <FaHeart size={20} style={{ marginRight: '5px' }} />
-          Favoritar
-        </FavButton>
+        <div sytle="display: flex; margin-left: 20px; flex-direction: column; width: 100%;">
+          <Title>Descrição</Title>
+          <Description>
+            {book.description && book.description.length > 0
+              ? book.description
+              : 'Não disponível'}
+          </Description>
+        </div>
       </CoverFavorite>
-      <Title>Descrição</Title>
-      <Divider />
-      <Description>
-        {book.description && book.description.length > 0
-          ? book.description
-          : 'Não disponível'}
-      </Description>
+      <FavButton onClick={() => handleAdd(id)}>
+        <FaHeart size={20} style={{ marginRight: '5px' }} />
+        Favoritar
+      </FavButton>
     </Container>
   );
 }

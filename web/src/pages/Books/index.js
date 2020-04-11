@@ -71,7 +71,7 @@ export default function Books() {
         url: `favorites/${bookId}`,
         headers: { Authorization: id },
       });
-      toast.success('Livro favoritado com sucesso');
+      toast.success(`Livro favoritado com sucesso! ID: ${bookId}`);
     } catch (e) {
       toast.error('Livro já favoritado');
     }
